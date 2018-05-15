@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" type="text/css" />
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+
+        <a href="MainPage.html">
+            <img src="/images/baricon256x256.png" width="50" height="50">
+        </a>
+
+
+        <a href="News.html">News</a>
+        <a href="History.html">History</a>
+        <div align="right">
+            <h3>FC Barcelona Fans Club</h3>
+        </div>
+        <a href="#">Login</a>
+        <a href="Registered.html">Sign Up</a>
+    </div>
+    <form action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="/images/baricon256x256.png" alt="Avatar" class="icon">
+        </div>
+
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn"><a href="MainPage.html">Cancel</a></button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</body>
+
+</html>

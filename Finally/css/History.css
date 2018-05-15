@@ -1,0 +1,189 @@
+#myTopnav h3{
+    font-size: 27px;
+    color: #d02929;
+}
+#myTopnav {
+    align-content: center;
+}
+
+.topnav {
+    background-color: #8e1821;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    order: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 20px 30px 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+@media only screen and (max-width: 900px) {
+    #myTopnav a {font-size: 20px;}
+    #myTopnav h3{font-size: 29px;}
+}
+@media only screen and (max-width: 500px) {
+    #myTopnav a {font-size: 15px;}
+    #myTopnav h3{font-size: 29px;}
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: black;
+}
+body .nav{
+    color:royalblue;
+}
+#header img {
+max-width: 100%;
+height: 30%:
+}
+
+#header {
+background-color:black;
+margin-bottom: 5px;
+}
+
+
+
+#flex-container {
+ display: flex; flex-flow: row wrap;
+  
+}
+
+#main, #playground, #Honours {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #888888;
+}
+#main{
+    width:auto;
+    -webkit-column-count: 3;
+}
+#main h3{
+    color:blueviolet;
+}
+#main h2{
+    font-size: 30px;
+    color:darkcyan;
+}
+
+#main img{
+    float:left;
+    max-width:200px;
+}
+
+#main div{
+    clear: none;
+}
+#main h4{
+    display: none;
+}
+
+#playground {
+ width:100%;
+color: cadetblue;
+}
+
+#playground h2{
+    color:greenyellow;
+    font-size:30px;
+    font-family: fantasy;
+}
+
+#playground img{
+    min-width:100%;
+    height:30%;
+}
+#Honours h2{
+    text-align: center;
+    font-family:cursive;
+  color: darkmagenta;  
+}
+
+#Honours h3{
+    color:fuchsia;
+    margin: 2px;
+}
+
+#Honours{
+    background-image: url(H2.jpg);
+    background-size:cover;
+    width: auto;
+    height: auto;
+
+}
+
+@media only screen and (max-width:1000px) {
+    #Honours{
+
+        background-image: url(H1.jpg);
+        background-repeat:no-repeat;
+    }
+    #playground{
+        background-image: url(P2.jpg);
+         background-repeat:no-repeat;
+        background-size:cover;
+        width: auto;
+        height:auto;
+    }
+    
+    #playground img{
+        display:none;
+    }
+    #main h4{
+        display: inline;
+        color: aqua;
+    }    
+    #main{
+            background-image: url(MSN.jpg);
+        background-size: cover;
+        width: auto;
+        height: auto;
+        background-repeat:no-repeat;
+    }
+    #main h3{
+        display: none;
+    }
+
+}

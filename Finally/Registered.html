@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Register as a FC Bercelona Fans</title>
+    <link href="Registered.css" rel="stylesheet" type="text/css">
+    <script>
+        function print_Result() {
+            var name = document.f1.name.value;
+            alert("Name: " + name);
+            var dob = document.f1.dob.value;
+            alert("Date of Birth: " + dob);
+            var email = document.f1.email.value;
+            alert("Email: " + email);
+            var phone = document.f1.tel.value;
+            alert("PhoneNumber: " + phone);
+            var pw = document.f1.PW.value;
+            alert("Password: " + pw);
+        }
+        
+    </script>
+
+</head>
+
+<body bgcolor="#a52b2b">
+          
+           <div class="topnav" id="myTopnav">
+
+            <a href="MainPage.html">
+                <img src="/images/baricon256x256.png" width="50" height="50">
+            </a>
+
+            
+            <a href="News.html">News</a>
+            <a href="History.html">History</a>
+            <div align="right">
+                <h3>FC Barcelona Fans Club</h3>
+            </div>
+            <a href="login.html">Login</a>
+            <a href="Registered.html">Sign Up</a>
+        </div>
+        
+        
+        
+        
+    <div class="Registered">
+        <h1><marquee direction="left">Welcome to join FC Bercelona Fans Club!!!</marquee></h1>
+    </div>
+
+    <div class="form">
+        <form name="f1" onSubmit="print_Result()">
+            <fieldset>
+                <legend>Personal Detail</legend>
+                <div>
+                    Name:
+                    <input type="text" required name="name" id="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Sex:
+                    <input type="radio" required id="m" checked="checked" />Male
+                    <input type="radio" required id="f" />Female
+                </div>
+
+                <div>
+                    Date Of Birth:
+                    <input type="date" name="dob" required>
+                </div>
+
+                <div>
+                    <input type="radio" name="choose1" checked="checked">HKID:
+                    <input type="text" id="hkid" pattern="[A-Z][0-9]{6}" title="[A-Z]and six number of your HKID" required>
+                    <br>
+                    <input type="radio" name="choose1">Other ID:
+                    <input type="text">
+                </div>
+
+                <div>
+                    Email Address:
+                    <input type="email" name="email" id="email" title="xxx@xxx.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" required>
+                </div>
+
+                <div>Phone:
+                    <input type="tel" name="tel" parttern="852-[0-9]{8}" title="852-xxxxxxxx x is number" required>
+                </div>
+
+                <div>
+                    Address:
+                    <input type="text" name="address" id="address">
+                </div>
+                <div>Password:
+                    <input type="password" pattern="[A-Za-z0-9!@#$%^&*]{8,15}" title="password need at least 8 words and max 15 words" name="PW" required>
+                </div>
+                <div>Confirm Password:
+                    <input type="password" name="PW2">
+                </div>
+            </fieldset>
+            <div>
+                Carrer:
+                <select name="Carrer">
+                    <option value="stu">student</option>
+                    <option value="teac">Teacher</option>
+                    <option value="sport">sportsman</option>
+                </select>
+                <br> Other Carrier:
+                <input type="text" value="Please note">
+            </div>
+
+            <div>
+                How long to watch the football game?
+                <input type="checkbox" name="facebook">0-2years&nbsp;&nbsp;
+                <input type="checkbox" name="maga">3-5years
+                <br> Other:
+                <input type="text" name="Place">
+            </div>
+            <div>
+                <input type="checkbox" id="ticked" required>Have read the regulations
+            </div>
+            <div>
+                <input type="checkbox">Want to receive News about Barcelona?
+            </div>
+            
+
+            <div>
+                <button type="reset" value="clear">clear</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

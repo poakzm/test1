@@ -1,0 +1,119 @@
+body {
+    background-color: #d02929
+}
+#myTopnav h3{
+    font-size: 27px;
+    color: #d02929;
+}
+
+@media only screen and (max-width: 912px) {
+    #flex-container h3{font-size: 21px;}
+}
+.topnav {
+    background-color: #0d1f80;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    order: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+}
+
+#newsContainer {
+    flex-flow: row;
+    justify-content: space-around;
+    flow-direction: row;
+    display: flex
+}
+
+#newsContainer p {
+    white-space: nowrap;
+    width: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#newsContainer2 {
+    flex-flow: row;
+    justify-content: space-around;
+    flow-direction: row;
+    display: flex
+}
+
+#newsContainer2 p {
+    white-space: nowrap;
+    width: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#newsContainer3 {
+    flex-flow: row;
+    justify-content: space-around;
+    flow-direction: row;
+    display: flex
+}
+
+#newsContainer3 p {
+    white-space: nowrap;
+    width: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 950px) {
+    #newsContainer p {
+        white-space: nowrap;
+        width: 24em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }#newsContainer2 p {
+        white-space: nowrap;
+        width: 24em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }#newsContainer3 p {
+        white-space: nowrap;
+        width: 24em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin: 20px 20px 30px 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+@media only screen and (max-width: 900px) {
+    #myTopnav a {font-size: 20px;}
+    #flex-container h3{font-size: 29px;}
+}
+@media only screen and (max-width: 500px) {
+    #myTopnav a {font-size: 15px;}
+    #flex-container h3{font-size: 29px;}
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}

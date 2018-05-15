@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <title>FC Barcelona Fans Page</title>
+    <link type="text/css" rel="stylesheet" href="/css/MainPage.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+    <div id="flex-container">
+        <div class="topnav" id="myTopnav">
+
+            <a href="MainPage.html">
+                <img src="/images/baricon256x256.png" width="50" height="50">
+            </a>
+
+            
+            <a href="News.html">News</a>
+            <a href="History.html">History</a>
+            <div align="right">
+                <h3>FC Barcelona Fans Club</h3>
+            </div>
+            <a href="login.html">Login</a>
+            <a href="Registered.html">Sign Up</a>
+        </div>
+        <div id="mainbanner">
+            <img src="images/RCsNfvS.png">
+        </div>
+        <div class="video" align="justify">
+            <div class="video1-container">
+                <iframe height="390" width="490" src="https://www.youtube.com/embed/Jt2uALoegow" allowfullscreen></iframe>
+            </div>
+            <div class="video2-container">
+                <iframe height="390" width="490" src="https://www.youtube.com/embed/yIzj_hKANNQ" allowfullscreen></iframe>
+            </div>
+            <div class="video3-container">
+                <iframe height="390" width="490" src="https://www.youtube.com/embed/li9c7GCo6PM" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!--    FlexSlider-->
+    <section class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/Cristian_Tello_Wallpaper_1.png" />
+                </li>
+                <li>
+                    <img src="images/2017-04-18-barcelona-neymar_y37kt42anewa11ywqzrs1vr15.jpg" />
+                </li>
+                <li>
+                    <img src="images/04933991-800x504.jpg" />
+                </li>
+                <li>
+                    <img src="images/reu_2326945.jpg" />
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')
+    </script>
+
+    <!-- FlexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlsContainer: $(".custom-controls-container"),
+                customDirectionNav: $(".custom-navigation a"),
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--    End of FlexSlider-->
+
+
+</body>
+
+</html>
